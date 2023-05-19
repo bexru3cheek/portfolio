@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 3;
+  background-color: #171a23;
+  border-bottom: solid 1px #242833;
+}
+
+nav .karobka {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.karobka .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.karobka .logo img {
+  height: 60px;
+}
+
+.karobka .logo p {
+  text-align: center;
+  padding-left: 15px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0;
+}
+.karobka .contact {
+  display: flex;
+}
+.karobka .contact .card {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #171a23;
+  border: 0;
+}
+.karobka .contact .card:hover {
+  background-color: #2e3748;
+}
+.karobka .contact .card img {
+  width: 15px;
+  height: 15px;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #171a23;
+  margin-top: 50px;
+}
+
+.main-container {
+  padding-top: 45px;
+  flex-grow: 1;
+  overflow: auto;
+  color: black;
+  background-color: #1a1f2b;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.video-app {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sahifalar {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid var(--border-color);
+  overflow: auto;
+  margin-top: -50px;
+  flex-shrink: 0;
+}
+
+main .sahifalar .cards {
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .sahifalar .cards .card {
+  display: flex;
+  width: 90%;
+  background-color: #171a23;
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+main .sahifalar .cards .card p {
+  margin-bottom: 0;
+  padding-left: 10px;
+  color: #fff;
+}
+
+main .sahifalar .cards .card:hover {
+  background-color: #282b34;
+}
+.main-container .bootcamp {
+  margin-left: 45px;
+  margin-right: 45px;
+  background-color: #1a202c;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 4px 12px black;
+}
+.main-container .bootcamp .title {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .bootcamp .title .par {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container .bootcamp .title .par p {
+  font-weight: 600;
+  font-size: 32px;
+}
+.main-container .bootcamp .title .close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: #1b6c17 solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main-container .bootcamp .title .close img {
+  width: 20px;
+  height: 20px;
+}
+.main-container .bootcamp p a {
+  text-decoration: none;
+  color: #39a76a;
+  cursor: pointer;
+}
+.main-container .bootcamp p a:hover {
+  color: blue;
+}
+
+.main-container .bootcamp .title .par .title_bootcamp {
+  padding-left: 5px;
+  color: #39a76a;
+}
+
+.main-container .kurslar {
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 30px;
+  background-color: #2e3748;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 4px 12px black;
+}
+
+.title {
+  display: flex;
+}
+
+.title p {
+  font-weight: 600;
+  font-size: 32px;
+}
+.kurslar .card {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  background-color: #1a202c;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.kurslar .card .qism {
+  color: #fff;
+  height: 100%;
+  width: 25%;
+  margin-right: 20px;
+  border-right: #fff solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 20px;
+}
+.kurslar .card .qism img {
+  width: 40px;
+  height: 40px;
+}
+.kurslar .card .qism p {
+  margin-bottom: 0;
+}
+.yangi_kurslar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  margin-right: 45px;
+  max-width: 1400px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.yangi_kurslar h2 {
+  color: #39a76a;
+  font-size: 32px;
+  font-weight: 400;
+}
+.yangi_kurslar .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+.yangi_kurslar .cards .card {
+  width: 260px;
+  margin: 10px;
+  height: 360px;
+  padding: 20px;
+  background-color: #2e3748;
+  border-radius: 10px;
+}
+.yangi_kurslar .cards .card img {
+  border-radius: 10px;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+.yangi_kurslar .cards .card p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.yangi_kurslar .cards .card hr {
+  color: #fff;
+}
+.yangi_kurslar .cards .card .about {
+  display: flex;
+  justify-content: space-between;
+}
+.yangi_kurslar .cards .card .about button {
+  background-color: #2e3748;
+  border-radius: 10px;
+  border: #39a76a solid 1px;
+  padding: 5px 10px;
+  color: #39a76a;
+  font-weight: 300;
+  transition: 0.2s ease;
+}
+.yangi_kurslar .cards .card .about button:hover {
+  background-color: #242833;
+}
+.yangi_kurslar .cards .card .about .narx {
+  display: flex;
+  margin-top: 0;
+  padding: 5px;
+}
+.yangi_kurslar .cards .card .about .narx .p1 {
+  color: #fff;
+  margin-right: 5px;
+  margin-top: 0;
+}
+.yangi_kurslar .cards .card .about .narx .p2 {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.mashhur_kurslar {
+  margin-left: 45px;
+  margin-right: 45px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.mashhur_kurslar h2 {
+  color: #39a76a;
+  font-size: 32px;
+  font-weight: 400;
+}
+.mashhur_kurslar .cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.mashhur_kurslar .cards .card {
+  width: 405px;
+  margin: 10px;
+  height: 560px;
+  padding: 20px;
+  background-color: #2e3748;
+  border-radius: 10px;
+}
+.mashhur_kurslar .cards .card:hover {
+  cursor: pointer;
+}
+.mashhur_kurslar .cards .card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.mashhur_kurslar .cards .card h3 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.mashhur_kurslar .cards .card .vaqti {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 30px;
+  color: #fff;
+}
+.mashhur_kurslar .cards .card .vaqti img {
+  width: 20px;
+  height: 20px;
+}
+.mashhur_kurslar .cards .card .vaqti p {
+  font-size: 15px;
+  font-weight: 100;
+  margin-right: 20px;
+  margin-left: 4px;
+}
+.mashhur_kurslar .cards .card hr {
+  color: #fff;
+}
+.mashhur_kurslar .cards .card .haqida {
+  display: flex;
+  justify-content: space-between;
+}
+.mashhur_kurslar .cards .card .haqida .ism {
+  display: flex;
+}
+.mashhur_kurslar .cards .card .haqida .ism img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.mashhur_kurslar .cards .card .haqida .ism p {
+  color: #fff;
+  margin-top: 8px;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 100;
+}
+.mashhur_kurslar .cards .card .haqida .narx {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+}
+.mashhur_kurslar .cards .card .haqida .narx .p1 {
+  color: #fff;
+  margin-right: 5px;
+  margin-top: 0;
+}
+.mashhur_kurslar .cards .card .haqida .narx .p2 {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.Takliflar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  margin-right: 45px;
+  max-width: 1400px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.Takliflar h2 {
+  color: #39a76a;
+  font-size: 32px;
+  font-weight: 400;
+}
+.Takliflar .cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.Takliflar .cards .card {
+  width: 260px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #2e3748;
+  border-radius: 10px;
+  color: #fff;
+}
+.Takliflar .cards .card .title {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Takliflar .cards .card .title img {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+.Takliflar .cards .card h4 {
+  margin-top: 15px;
+}
+.Takliflar .cards .card p {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 100;
+}
+.email {
+  margin-left: 45px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 0;
+}
+.email .karobka {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #2e3748;
+  border-radius: 10px;
+}
+.email .karobka h4 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.email .karobka .send {
+  display: flex;
+  justify-content: space-evenly;
+}
+.email .karobka .send input {
+  background-color: #3b3b3b;
+  border: 0;
+  border-radius: 5px;
+  color: #98a2b5;
+  height: 30px;
+}
+.email .karobka .send .submit {
+  background-color: #9be6b6;
+  color: #13254f;
+  width: 30%;
+  border: 0;
+  height: 30px;
+  border-radius: 5px;
+}
+.email .karobka p {
+  margin-top: 15px;
+  text-align: center;
+  color: #698383;
+}
+
+footer {
+  background-color: #171a23;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+footer p {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 100;
+}
+footer .tarmoqlar {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+footer .tarmoqlar .card {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #23262f;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+footer .tarmoqlar .card img {
+  width: 25px;
+  height: 25px;
+}
