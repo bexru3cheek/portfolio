@@ -118,9 +118,7 @@ main .sahifalar .cards .card {
   padding: 10px;
   margin-top: 20px;
 }
-main .sahifalar .cards .card a {
-  text-decoration: none;
-  cursor: pointer;
+main .sahifalar .cards .card p {
   margin-bottom: 0;
   padding-left: 10px;
   color: #fff;
@@ -129,104 +127,7 @@ main .sahifalar .cards .card a {
 main .sahifalar .cards .card:hover {
   background-color: #282b34;
 }
-.main-container .bootcamp {
-  margin-left: 45px;
-  margin-right: 45px;
-  background-color: #1a202c;
-  color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 1px 4px 12px black;
-}
-.main-container .bootcamp .title {
-  display: flex;
-  justify-content: space-between;
-}
-.main-container .bootcamp .title .par {
-  display: flex;
-  justify-content: space-between;
-}
 
-.main-container .bootcamp .title .par p {
-  font-weight: 600;
-  font-size: 32px;
-}
-.main-container .bootcamp .title .close {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: #1b6c17 solid 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.main-container .bootcamp .title .close img {
-  width: 20px;
-  height: 20px;
-}
-.main-container .bootcamp p a {
-  text-decoration: none;
-  color: #39a76a;
-  cursor: pointer;
-}
-.main-container .bootcamp p a:hover {
-  color: blue;
-}
-
-.main-container .bootcamp .title .par .title_bootcamp {
-  padding-left: 5px;
-  color: #39a76a;
-}
-
-.main-container .kurslar {
-  margin-left: 45px;
-  margin-right: 45px;
-  margin-top: 30px;
-  background-color: #2e3748;
-  color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 1px 4px 12px black;
-}
-
-.title {
-  display: flex;
-}
-
-.title p {
-  font-weight: 600;
-  font-size: 32px;
-}
-.kurslar .card {
-  width: 100%;
-  height: 70px;
-  padding: 10px;
-  background-color: #1a202c;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
-}
-.kurslar .card .qism {
-  color: #fff;
-  height: 100%;
-  width: 25%;
-  margin-right: 20px;
-  border-right: #fff solid 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-right: 20px;
-}
-.kurslar .card .qism img {
-  width: 40px;
-  height: 40px;
-}
-.kurslar .card .qism p {
-  margin-bottom: 0;
-}
 .yangi_kurslar {
   display: flex;
   flex-direction: column;
@@ -244,7 +145,7 @@ main .sahifalar .cards .card:hover {
 .yangi_kurslar .cards {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 .yangi_kurslar .cards .card {
@@ -302,157 +203,6 @@ main .sahifalar .cards .card:hover {
   margin-top: 0;
 }
 
-.mashhur_kurslar {
-  margin-left: 45px;
-  margin-right: 45px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1400px;
-  margin-top: 40px;
-  overflow: hidden;
-}
-.mashhur_kurslar h2 {
-  color: #39a76a;
-  font-size: 32px;
-  font-weight: 400;
-}
-.mashhur_kurslar .cards {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-.mashhur_kurslar .cards .card {
-  width: 405px;
-  margin: 10px;
-  height: 560px;
-  padding: 20px;
-  background-color: #2e3748;
-  border-radius: 10px;
-}
-.mashhur_kurslar .cards .card:hover {
-  cursor: pointer;
-}
-.mashhur_kurslar .cards .card img {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.mashhur_kurslar .cards .card h3 {
-  color: #fff;
-  margin-bottom: 0;
-  margin-top: 15px;
-  font-size: 24px;
-  font-weight: 400;
-}
-.mashhur_kurslar .cards .card .vaqti {
-  display: flex;
-  margin-top: 10px;
-  margin-right: 30px;
-  color: #fff;
-}
-.mashhur_kurslar .cards .card .vaqti img {
-  width: 20px;
-  height: 20px;
-}
-.mashhur_kurslar .cards .card .vaqti p {
-  font-size: 15px;
-  font-weight: 100;
-  margin-right: 20px;
-  margin-left: 4px;
-}
-.mashhur_kurslar .cards .card hr {
-  color: #fff;
-}
-.mashhur_kurslar .cards .card .haqida {
-  display: flex;
-  justify-content: space-between;
-}
-.mashhur_kurslar .cards .card .haqida .ism {
-  display: flex;
-}
-.mashhur_kurslar .cards .card .haqida .ism img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.mashhur_kurslar .cards .card .haqida .ism p {
-  color: #fff;
-  margin-top: 8px;
-  align-items: center;
-  margin-left: 10px;
-  font-size: 15px;
-  font-weight: 100;
-}
-.mashhur_kurslar .cards .card .haqida .narx {
-  display: flex;
-  margin-top: 8px;
-  align-items: center;
-}
-.mashhur_kurslar .cards .card .haqida .narx .p1 {
-  color: #fff;
-  margin-right: 5px;
-  margin-top: 0;
-}
-.mashhur_kurslar .cards .card .haqida .narx .p2 {
-  color: #fff;
-  font-weight: 500;
-  margin-top: 0;
-}
-
-.Takliflar {
-  display: flex;
-  flex-direction: column;
-  margin-left: 45px;
-  margin-right: 45px;
-  max-width: 1400px;
-  margin-top: 40px;
-  overflow: hidden;
-}
-.Takliflar h2 {
-  color: #39a76a;
-  font-size: 32px;
-  font-weight: 400;
-}
-.Takliflar .cards {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-.Takliflar .cards .card {
-  width: 260px;
-  margin: 10px;
-  padding: 20px;
-  background-color: #2e3748;
-  border-radius: 10px;
-  color: #fff;
-}
-.Takliflar .cards .card .title {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Takliflar .cards .card .title img {
-  width: 30px;
-  height: 30px;
-  color: #fff;
-}
-.Takliflar .cards .card h4 {
-  margin-top: 15px;
-}
-.Takliflar .cards .card p {
-  margin-top: 15px;
-  font-size: 15px;
-  font-weight: 100;
-}
 .email {
   margin-left: 45px;
   margin-right: 45px;
